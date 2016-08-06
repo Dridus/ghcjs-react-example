@@ -30,7 +30,8 @@ $ make frontend-watch
 
 ### GHCJSi
 
-Initially, this is only going to work for basic GHCi-esque testing but that might be enough for you:
+Keep in mind `GHCJSi` hasn't had quite as much time to get a shake-out as `GHCi` so if you run into any issues, _please_ report it to [the GHCJS project](https://github.com/ghcjs/ghcjs)!
+
 
 ```
 $ cd frontend && stack exec -- ghcjs --interactive
