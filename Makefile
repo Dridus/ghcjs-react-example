@@ -4,7 +4,7 @@ build: frontend backend
 
 frontend:
 	cd frontend && stack build
-	cp $(PWD)/frontend/$(FRONTEND_STACK_PATH)/*.js backend/static/jsexe/
+	ln -nfs $(PWD)/frontend/$(FRONTEND_STACK_PATH) backend/static/jsexe
 
 frontend-watch:
 	cd frontend && stack build --file-watch --fast
