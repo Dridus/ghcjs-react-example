@@ -1,7 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Lib
-    ( someFunc
+    ( console_log
+    , someFunc
     ) where
 
 import Data.JSString ()
