@@ -11,8 +11,7 @@ frontend-watch:
 	cd frontend && stack build --file-watch --fast
 
 ghcjsi:
-	export NODE_PATH=$(MY_NODE_PATH)
-	cd frontend && stack exec -- ghcjs --interactive
+	cd frontend && NODE_PATH=$(MY_NODE_PATH) stack exec -- ghcjs --interactive
 
 backend:
 	cd backend && stack build
