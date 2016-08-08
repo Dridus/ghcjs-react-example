@@ -4,6 +4,8 @@ MY_NODE_PATH=/usr/local/lib/node_modules
 build: frontend backend
 
 frontend:
+	mkdir backend/static
+	mkdir backend/static/jsexe
 	cd frontend && stack build
 	ln -nfs $(PWD)/frontend/$(FRONTEND_STACK_PATH) backend/static/jsexe
 
