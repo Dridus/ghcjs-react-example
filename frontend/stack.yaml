@@ -1,7 +1,15 @@
 packages:
   - '.'
+  - location:
+      git: git@github.com:iand675/ghcjs-react.git
+      commit: 5332b215c3dae30c735b5d5223ea3e70c73e3827
+    extra-dep: true
 
-extra-deps: []
+extra-deps:
+  - ghcjs-dom-0.2.3.1
+  - monad-control-1.0.1.0
+  - transformers-base-0.4.4
+  - transformers-compat-0.5.1.4
 
 # compiler: ghcjs-0.2.0_ghc-7.10.2
 # resolver: ghcjs-0.2.0_ghc-7.10.2
